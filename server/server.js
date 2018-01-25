@@ -38,6 +38,10 @@ app.use(express.static(publicPath));
 //
 // var sess;
 
+app.get('/login',(req, res)=>{
+  res.redirect("/home.html");
+})
+
 app.get('/',(req, res)=>{
   res.render('help.hbs');
 });
